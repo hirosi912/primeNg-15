@@ -1,0 +1,28 @@
+<div class="layout-wrapper menu-layout-static"
+    [ngClass]="{'layout-menu-static-inactive': !(isExpanded$|async), 'layout-menu-static-active':(isExpanded$|async) }">
+    <app-header></app-header>
+
+    <div class="layout-menu-container" [ngClass]="{'layout-menu-dark': ((themeMode$|async) === 'dark')}">
+        <app-sidebar [asideItems]="menuItems"></app-sidebar>
+    </div>
+
+    <div class="layout-main">
+        <div class="card">
+            <div class="grid">
+                <div class="col-11">
+                    <app-tabmenu></app-tabmenu>
+                </div>
+                <div class="col-1">
+                    <p-button label="{{'clear'|translate}}" icon="pi pi-trash" class="mr-2" styleClass="p-button-outlined p-button-danger"></p-button>
+                </div>
+            </div>
+            
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+    <app-footer></app-footer>
+
+</div>
+
+<p-toast [breakpoints]="{'920px': {width: '100%', right: '0', left: '0'}}"></p-toast>
