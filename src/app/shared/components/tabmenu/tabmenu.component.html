@@ -1,0 +1,13 @@
+<p-tabMenu [model]="navs" dndDropzone (dndDrop)="onDrop($event)" *ngIf="visible">
+    <ng-template pTemplate="item" let-item let-i="index">
+        <div class="p-d-flex p-ai-tab" [id]="'div_'+i"  (dndStart)="onDragStart($event, i)" [dndDraggable]="item">
+            <span [id]="'span_'+i" class="p-mr-2" dndDisableIf="true">{{ item.label | translate | titlecase }}</span>
+            <p-button *ngIf="item.routerLink!='/home'" icon="pi pi-times"
+                styleClass="p-button-sm p-button-rounded p-button-danger p-button-text tab-button" class="tab-button"
+                (click)="closeTab($event,item)"></p-button>
+        </div>
+    </ng-template>    
+</p-tabMenu>
+
+
+
