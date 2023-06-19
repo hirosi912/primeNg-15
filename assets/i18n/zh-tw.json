@@ -1,0 +1,40 @@
+{
+    "area": "區域",
+    "clear": "清空", 
+    "facility": "場端",
+    "home": "首頁",    
+    "settings": "設定",   
+    "step": "階段",  
+
+    "menu.home": "首頁",
+    "menu.manufacturing process": "製造流程",
+    "menu.analysis report": "分析報告",
+    "menu.posting": "過帳管理",
+    "menu.By EQP": "By 機台",
+    "menu.By LOT": "By LOT",
+    "menu.eqp-posting": "機台過帳",
+    "menu.lot-posting": "Lot過帳",
+    "menu.settings": "設定",
+    
+    "message.error": "錯誤",
+    "message.info": "提示",
+    "message.success": "成功",
+    "message.warn": "警告",
+    
+    "errorMessage.timeOut": "連線逾時，請重新嘗試或通知系統人員",
+    "errorMessage.idNotExist": "帳號不存在",
+    "errorMessage.pwdError": "密碼錯誤",
+    "errorMessage.resourceNotFound": "目前沒資料",
+    "errorMessage.unknown": "連線失敗，請重新嘗試或通知系統人員",
+
+    "settings.title": "設定",
+    "settings.language": "語系",
+    "settings.style": "風格",
+    "settings.theme": "主題色系",
+    "settings.mode": "模式",
+    "settings.light": "明亮模式",
+    "settings.dark": "黑色模式",
+    
+    "select.language": "請選擇語系",
+    "select.layout": "請選擇主題"
+}
