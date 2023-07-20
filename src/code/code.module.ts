@@ -37,7 +37,7 @@ import { selectIsAuthenticated } from './auth/auth.selectors';
 // import { authReducer} from './auth/auth.reducer';
 import { TitleService } from './services/title.service';
 import { NavService, Nav } from './services/nav.service';
-import { ThemeService } from './theme/theme.service';
+import { ThemeService } from './services/theme.service';
 import {
   ROUTE_ANIMATIONS_ELEMENTS,
   routeAnimations,
