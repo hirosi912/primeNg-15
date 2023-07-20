@@ -1,0 +1,29 @@
+<form [formGroup]="form" class="grid">
+    <div class="col-12 mt-2">
+        <div class="inline-block">
+            <span class="p-float-label">
+                <p-dropdown [options]="facilities" formControlName="facility" placeholder="{{'facility' | translate}}"
+                    optionLabel="label" inputId="float-label"></p-dropdown>
+                <label for="float-label">{{'facility' | translate}}</label>
+            </span>
+        </div>
+        <i class="pi pi-chevron-right inline-block mx-2" style="font-size: 1rem"></i>
+        <div class="inline-block">
+            <span class="p-float-label">
+                <p-dropdown [options]="areas" formControlName="area" placeholder="{{'area' | translate}}"
+                    optionLabel="label" inputId="float-label"></p-dropdown>
+                <label for="float-label">{{'area' | translate}}</label>
+            </span>
+        </div>
+        <i class="pi pi-chevron-right inline-block mx-2" style="font-size: 1rem"></i>
+        <div class="mt-5 md:hidden"></div>
+        <div class="inline-block">
+            <span class="p-float-label">
+                <p-dropdown [options]="steps" formControlName="step" placeholder="{{'step' | translate}}"
+                    optionLabel="label" inputId="float-label"></p-dropdown>
+                <label for="float-label">{{'step' | translate}}</label>
+            </span>            
+        </div>
+        <p-button label="{{'reset'|translate}}" (click)="reset()" icon="pi pi-refresh" class="ml-4 reset" styleClass="p-button-outlined p-button-sm"></p-button>
+    </div>
+</form>
